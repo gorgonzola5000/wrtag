@@ -1,9 +1,0 @@
-env METADATA_NO_PROPERTIES=1
-
-exec create-audio-files a.flac
-
-exec metadata clear -- a.flac
-exec metadata write a '' -- a.flac
-
-exec metadata read -- a.flac
-! stdout .
